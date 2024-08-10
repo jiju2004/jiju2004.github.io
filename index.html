@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIJU ABRAHAM | Portfolio</title>
+    <style>
+        /* Import Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: url('IMG.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: url('IMG3.jpg') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            padding: 30px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            text-align: left;
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .header-content div {
+            text-align: left;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 5px 0 0;
+        }
+
+        nav {
+            background-color: rgba(68, 68, 68, 0.8);
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff9900; /* Accent color for hover effect */
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        section {
+            flex: 1;
+            min-width: 300px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .about, .projects, .skills {
+            margin-bottom: 0;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .projects img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .projects img:hover {
+            transform: scale(1.05);
+        }
+
+        .projects h3 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            padding: 20px;
+        }
+
+        .skill {
+            margin-bottom: 20px;
+        }
+
+        .skill-bar {
+            height: 10px;
+            background-color: #ff9900;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .social-media a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .social-media a:hover {
+            color: #ff9900;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .profile-pic {
+                margin-bottom: 20px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            .main-content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <img src="p.jpg" alt="Profile Picture" class="profile-pic">
+        <div>
+            <h1>JIJU ABRAHAM</h1>
+            <p>SOFTWARE ENGINEER | PROGRAMMER</p>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="#skills">Skills</a>
+</nav>
+
+<div class="main-content">
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Jiju Abraham, an undergraduate student pursuing a Bachelor of Technology (BTech) in Computer Science and Engineering (CSE). I have a strong passion for technology and programming, and I'm dedicated to expanding my knowledge and skills in this dynamic field. My interests lie in software development, web technologies, and exploring the latest advancements in computer science.</p>
+        <p>I enjoy taking on new challenges, working on projects that solve real-world problems, and continuously learning new programming languages and tools. As I progress through my academic journey, I'm excited to apply my knowledge to innovative projects and contribute to the tech community.</p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div>
+            <h3>Project 1</h3>
+            <img src="project1.jpg" alt="Project 1">
+            <p>Description of Project 1.</p>
+        </div>
+        <div>
+            <h3>Project 2</h3>
+            <img src="project2.jpg" alt="Project 2">
+            <p>Description of Project 2.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <h3>C</h3>
+            <div class="skill-bar" style="width: 70%;"></div>
+        </div>
+        <div class="skill">
+            <h3>Python</h3>
+            <div class="skill-bar" style="width: 70%;"></div>
+        </div>
+        <div class="skill">
+            <h3>HTML</h3>
+            <div class="skill-bar" style="width: 70%;"></div>
+        </div>
+        <div class="skill">
+            <h3>Java</h3>
+            <div class="skill-bar" style="width: 70%;"></div>
+        </div>
+    </section>
+</div>
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:jijuabraham20@gmail.com">jijuabraham20@gmail.com</a></p>
+    <p>Phone: 9873652127</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/jiju-abraham/" target="_blank">Jiju Abraham</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2024 JIJU ABRAHAM. All Rights Reserved.</p>
+    <div class="social-media">
+        <a href="https://www.linkedin.com/in/jiju-abraham/" target="_blank">LinkedIn</a>
+        <!-- Add more social media links here -->
+    </div>
+</footer>
+
+</body>
+</html>
